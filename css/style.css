@@ -1,0 +1,654 @@
+
+/****** Stylesheet for J586 Project 1 *******/
+
+body {
+  font-style: "Myriad Pro", "Gill Sans", Helvetica, Arial, Verdana, sans-serif;
+}
+
+a:hover {
+  color: #cccccc
+}
+
+ul {
+list-style-type: none;
+}
+
+#thintopstrip {
+  background-color: #2190e8;
+  padding-top: .6em;
+  text-align: right;
+  top: 0px;
+  width: 100%;
+}
+
+#thintopstrip ul {
+  position: relative;
+}
+
+#thintopstrip ul li {
+  display: inline;
+}
+
+#thintopstrip ul li a {
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#thintopstrip ul a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+#thintopstrip li+li {
+  border-left: 1.5px solid #1c85d8;
+  padding: 0 8px 0 8px;
+}
+
+#topnavbg {
+  background: url(../images/navbg.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+  background-attachment: scroll;
+  /*background-color: #134670;*/
+  height: 8em;
+}
+
+#topnav {
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 80px;
+  position: relative;
+  top: -7em;
+  width: 100%;
+}
+
+#topnav .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+@media screen and (max-width: 400px) {
+  #topnav .container .row {
+    margin-left: -45px;
+    margin-right: 0px;
+  }
+}
+
+#topnav .row .col-xs-2 {
+  padding: 0px;
+}
+
+.icon1, .icon1active, .icon2, .icon2active, .icon3, .icon3active, .icon4, .icon4active, .icon5, .icon5active, .icon6, .icon6active {
+	background: url(sprites.png) no-repeat;
+  width: 8%;
+}
+
+a:hover .icon1active {
+  background-position: 0 -100px ;
+	width: 75px;
+	height: 85px;
+}
+
+a:hover .icon2active {
+  background-position: -87px -99px ;
+	width: 75px;
+	height: 85px;
+}
+
+a:hover .icon3active {
+  background-position: -171px -99px ;
+	width: 75px;
+	height: 85px;
+}
+
+a:hover .icon4active {
+  background-position: -260px -100px ;
+  width: 75px;
+  height: 85px;
+}
+
+a:hover .icon5active {
+  background-position: -336px -100px ;
+  width: 75px;
+  height: 85px;
+}
+
+a:hover .icon6active {
+  background-position: -416px -100px ;
+	width: 75px;
+	height: 85px;
+}
+
+.activepage a {
+  background: url (../images/marker.png) no-repeat center bottom;
+}
+
+.activepage a:hover {
+  background:
+}
+
+#dashboardbox {
+  background-color: #33cc66;
+  border-radius: 10px;
+  height: 6em;
+  margin: 5px 0 15px 0;
+  min-height: 5.3em;
+  width: 100%;
+  padding: 1em 2em;
+  position: relative;
+  top: -5.5em;
+}
+
+#dashboard {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+#dashboardbox .input-group {
+  padding-top: .7em;
+}
+
+#dashboardbox .btn-default {
+  border-left: 0 white;
+  color: #208de4;
+}
+
+#dashboardbox .btn-default:hover {
+  color: #ccc;
+  background-color: white;
+  border-color: #ccc;
+}
+
+/*#dashboardbox .btn-default:active {
+  color: #ccc;
+  background-color: white;
+  border-color: #ccc;
+}*/
+
+.navbuttons {
+  border-radius: 10px;
+  box-shadow: 0 0 5px #999;
+  color: #ff9b13;
+  display: inline-block;
+  font-size: 10px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  width: 18px;
+}
+
+@media screen and (max-width: 400px) {
+  .navbuttons {
+    border-radius: 10px;
+    box-shadow: 0 0 5px #999;
+    color: #ff9b13;
+    display: inline-block;
+    font-size: 10px;
+    height: 18px;
+    /*line-height: 18px;*/
+    text-align: center;
+    width: 18px;
+    }
+  }
+
+.navbuttons a {
+  color: #ff9b13;
+}
+
+.navbuttons a:hover {
+  color: #ccc;
+}
+
+#gradientbackground {
+  /* original css code from http://jsfiddle.net/necolas/vqnk9/ */
+    background: linear-gradient(#f6f6f6, white);
+    background: -moz-linear-gradient(#f6f6f6, white);
+    background: -o-linear-gradient(#f6f6f6, white);
+    background: -webkit-linear-gradient(#f6f6f6, white);
+    border-top: 1px solid #eaeaea;
+    width: 100%;
+    height: 15em;
+    position: relative;
+    border-radius: 10px;
+    top: -5em;
+}
+
+.content {
+    bottom: 0;
+    box-shadow: 0 0 3px #ccc;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: -20em;
+    position: relative;
+    top: -20em;
+}
+
+.content .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* source code from http://stackoverflow.com/questions/12770591/easy-way-to-see-the-bootstrap-grid*/
+.show-grid [class^=col-] {
+  background-color: white;
+  border: 1px solid #e9e9e9;
+  padding: 1.5em;
+  border-collapse: collapse;
+}
+
+#announcements p {
+}
+
+#announcements .header{
+  color: #fe7f13;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 2.1em;
+  padding-bottom: 1.9em;
+}
+
+#announcements .text {
+  color: #777;
+  font-weight: normal;
+  padding-top: 2em;
+  padding-bottom: 18px;
+}
+
+#announcements .buttons {
+  padding-top: 2em;
+  padding-bottom: 1.9em;
+}
+
+#announcements .show-grid [class^=col-] {
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.headtext {
+  color: #2498f4;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.show-grid [class^=col-] .noborder {
+  border: 0px;
+}
+
+/* .show-grid [class^=col-] .border1 {
+  border: 0 0 0 1;
+  border: 1px solid #e9e9e9;
+} */
+
+.show-grid [class^=col-] .nopadding {
+  padding: 1.5em 0 1em 0;
+}
+
+.show-grid [class^=col-] .nopadding1 {
+  padding: 0 0 1em 0;
+}
+
+.show-grid [class^=col-] .nopadding2 {
+  padding: 0 0 1em 0;
+}
+
+.show-grid [class^=col-] .nopadding3 {
+  padding: 1.5em 1em 0 1em;
+}
+
+.show-grid [class^=col-] .nopadding4 {
+  padding: 1.5em 0 1em 1em;
+}
+
+.piepadding {
+  padding: .5em 0em 0em 0em;
+  max-width: 90%;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #999;
+  font-size: .8em;
+}
+
+.dropdown {
+}
+
+.fa-chevron-down {
+  color: #fe7f13;
+}
+
+/*
+input [type="checkbox"] {
+  display: none;
+}
+
+.checkbox-style input [type="checkbox"] + label i {
+  display: inline-block;
+  background: url(images/checkbox.png) no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.checkbox-style input [type="checkbox"]:checked + label i {
+  background: url(images/checkboxmark.png) 1px -2px no-repeat;
+  width: 1.5em;
+  height: 1.5em;
+}
+*/
+
+.facebook1 {
+  background-color: #114570;
+  padding: 3px 6px 3px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+}
+
+.twitter1 {
+  background-color: #2298f4;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+  padding: 3px 6px 3px 6px;
+}
+
+.foursquare1 {
+  background-color: #3a599b;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+  padding: 3px 6px 3px 6px;
+}
+
+.google1 {
+  background-color: #31cc66;
+  border-radius: 4px;
+  color: white;
+  font-size: .8em;
+  padding: 3px 6px 3px 6px;
+}
+
+#contacts {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: center;
+}
+
+#customers {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: center;
+}
+
+.contactstext {
+  font-size: 1.5em;
+}
+
+.toppadding {
+  padding-top: 1em;
+}
+
+.bottompadding {
+  padding-bottom: 1.5em;
+}
+
+.borderbottom {
+  border-bottom: 1px #e9e9e9 solid;
+}
+
+.bluestrip {
+ width: 100%;
+ position: relative;
+ top: -40px;
+ background-color: #208de4;
+ min-height: 50px;
+ text-align: center;
+ padding: .5em;
+ color: white;
+ text-transform: uppercase;
+ z-index: 2;
+}
+
+.chart {
+  width: 90%;
+  position: relative;
+  top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.greenman {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: -25px;
+  display: inline;
+}
+
+.ribbonleft {
+  float: left;
+  position: relative;
+  left: -21px;
+  top: -95px;
+  margin-bottom: -90px;
+  z-index: 1;
+}
+
+.ribbonright {
+  float: right;
+  position: relative;
+  right: -21px;
+  top: -95px;
+  margin-bottom: -90px;
+}
+
+#didyouknowbox {
+  background-color: #208de4;
+  padding: 3em 5em 3em 5em;
+  color: white;
+  margin: -2%;
+}
+
+.leftcircle {
+  float: left;
+  position: relative;
+  right: 76px;
+  top: -67px;
+  clear: right;
+  height: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .leftcircle {
+    float: left;
+    position: relative;
+    right: 76px;
+    top: -150px;
+    clear: right;
+  }
+}
+
+.rightcircle {
+  float: right;
+  position: relative;
+  right: -75px;
+  top: -67px;
+  clear: right;
+  height: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .rightcircle {
+    float: left;
+    position: relative;
+    right: -133px;
+    top: -150px;
+    clear: right;
+  }
+}
+
+.leftarrow {
+  float: left;
+  position: relative;
+  left: -7em;
+  top: -3.7em;
+}
+
+/*@media screen and (max-width: 400px) {
+  .leftarrow {
+  float: right;
+  position: relative;
+  left: -71px;
+  top: -133px;
+  clear: right;
+  }*/
+
+  .leftarrow a {
+    color: #fe7f13;
+  }
+
+  .leftarrow a:hover {
+    color: #ccc;
+  }
+
+  /*
+.rightarrow {
+  float: right;
+  position: relative;
+  left: -100px;
+  top: -102px;
+  clear: right;
+}
+
+@media screen and (max-width: 400px) {
+  .rightarrow {
+  float: right;
+  position: relative;
+  left: 71px;
+  top: -154px;
+  clear: right;
+  }
+*/
+
+.rightarrow {
+  float: right;
+  position: relative;
+  left: 7em;
+  top: -3.75em;
+}
+
+.rightarrow a {
+  color: #fe7f13;
+}
+
+.rightarrow a:hover {
+  color: #ccc;
+}
+
+.gearicon {
+  color: #999999;
+  text-align: right;
+  padding-left: 7%;
+  padding-top: 2.5%;
+}
+
+a:hover .gearicon  {
+  color: #2394ee;
+}
+
+.tasktext {
+  font-size: 1.3em;
+  font-weight: 325;
+  line-height: .4em;
+}
+
+.tasktext a {
+  color: #2398f4;
+  text-decoration: none;
+}
+
+.taskpersonicon {
+  height: 25px;
+  width: 54px;
+  border-radius: 5px;
+  border: 1.5px #e9e9e9 solid;
+  font-size: 1.1em;
+  line-height: 25px;
+  text-align: left;
+  background-color: white;
+  font-weight: 350;
+  padding-left: .4em;
+}
+
+.tasknumbercircle {
+  padding-top: 1.5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #32cc66;
+  color: white;
+  font-weight: 480;
+}
+
+#adbox {
+  width: 100%;
+  min-height: 6em;
+  background-color: #2498f4;
+  padding: 1em 1em 1em 1em;
+}
+
+#adbox1 {
+  background-color: white;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  min-height: 160px;
+  width: 100%;
+}
+
+#adbox2 {
+
+}
+
+#adbox3 {
+
+}
+
+#adboxbg {
+  background-color: white;
+ position: relative;
+ border-radius: 5px;
+ min-height: 160px;
+ margin: 1em 0 1em 0;
+}
+
+#footer {
+  background-color: #f6f6f6;
+  min-height: 3.5em;
+  width: 100%;
+  position: relative;
+  top: 2em;
+  border-top: 2px solid white;
+  box-shadow: 0 0 15px #ccc;
+  margin: 0;
+}
+
+#footer .container {
+  color: #777;
+}

@@ -1,0 +1,76 @@
+.icon1, .icon1active, .icon2, .icon2active, .icon3, .icon3active, .icon4, .icon4active, .icon5, .icon5active, .icon6, .icon6active{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon1{
+	background-position: 0 -100px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon1active{
+	background-position: -1px 0;
+	width: 75px;
+	height: 85px;
+}
+
+.icon2{
+	background-position: -87px -99px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon2active{
+	background-position: -90px 0;
+	width: 75px;
+	height: 85px;
+}
+
+.icon3{
+	background-position: -171px -99px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon3active{
+	background-position: -175px 0;
+	width: 75px;
+	height: 85px;
+}
+
+.icon4{
+	background-position: -260px -100px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon4active{
+	background-position: -262px 0;
+	width: 75px;
+	height: 85px;
+}
+
+.icon5{
+	background-position: -336px -100px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon5active{
+	background-position: -338px -1px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon6{
+	background-position: -416px -100px ;
+	width: 75px;
+	height: 85px;
+}
+
+.icon6active{
+	background-position: -415px -1px ;
+	width: 75px;
+	height: 85px;
+}
+
