@@ -122,12 +122,9 @@ a:hover .icon6active {
 	height: 85px;
 }
 
-.activepage a {
-  background: url (../images/marker.png) no-repeat center bottom;
-}
-
-.activepage a:hover {
-  background:
+.markerpage a {
+  background: url (../images/marker.png);
+  top: 5em;
 }
 
 #dashboardbox {
