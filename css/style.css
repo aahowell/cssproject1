@@ -614,28 +614,47 @@ a:hover .gearicon  {
   padding: 1em 1em 1em 1em;
 }
 
-#adbox1 {
+.adbox1 {
+  background-image: url(../images/ad1.png);
   background-color: white;
+  background-position: top left;
   background-repeat: no-repeat;
-  border-radius: 10px;
-  min-height: 160px;
+  position: relative;
   width: 100%;
+  border-radius: 5px;
+  min-height: 160px;
+  margin: 1em 0 1em 0;
 }
 
-#adbox2 {
-
-}
-
-#adbox3 {
-
-}
-
-#adboxbg {
-  background-color: white;
+.adbox2bg {
+ background-color: white;
  position: relative;
  border-radius: 5px;
  min-height: 160px;
  margin: 1em 0 1em 0;
+}
+
+.adbox2 {
+  background-image: url(../images/ad2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -188px;
+  border-radius: 5px;
+  min-height: 174px;
+  margin: 1em 0 -190px 0;
+}
+
+.adbox3 {
+  background-image: url(../images/ad3.png);
+    background-color: white;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 160px;
+    margin: 1em 0 1em 0;
 }
 
 #footer {
@@ -651,4 +670,57 @@ a:hover .gearicon  {
 
 #footer .container {
   color: #777;
+}
+
+#footer .container .boldbluelink a {
+  color: #208de4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer .container .boldbluelink a:hover {
+  color: #999;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer .container a {
+  color: #777;
+  text-decoration: none;
+}
+
+#footer .container a:hover {
+  color: #208de4;
+  text-decoration: none;
+}
+
+#footer .noborder1 {
+  border-top: 0;
+  border-bottom: 0;
+  background: transparent;
+}
+
+#footer .show-grid .footerpadding {
+  padding: 1em 1em .5em 1em;
+}
+
+#footer .row .col-lg-5 .textright {
+  padding-left: 10em;
+}
+
+.logouticonborder {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 3px;
+  margin-right: 5px;
+  position: relative;
+  top: -6px;
+  margin-bottom: -6px;
+}
+
+a:hover .facebook {
+  background: url(sprites_social.png) -1px 0;
+	width: 16px;
+	height: 16px;
 }

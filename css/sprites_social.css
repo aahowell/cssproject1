@@ -1,0 +1,52 @@
+.facebookactive, .facebookhover, .foursquareactive, .foursquarehover, .twitteractive, .twitterhover, .youtubeactive, .youtubehover{
+	background: url(sprites.png) no-repeat;
+}
+
+.facebookactive{
+	background-position: 0 -52px ;
+	width: 16px;
+	height: 16px;
+}
+
+.facebookhover{
+	background-position: -1px 0;
+	width: 16px;
+	height: 16px;
+}
+
+.foursquareactive{
+	background-position: -47px -52px ;
+	width: 16px;
+	height: 16px;
+}
+
+.foursquarehover{
+	background-position: -50px -2px ;
+	width: 16px;
+	height: 16px;
+}
+
+.twitteractive{
+	background-position: -98px -53px ;
+	width: 16px;
+	height: 16px;
+}
+
+.twitterhover{
+	background-position: -98px -1px ;
+	width: 16px;
+	height: 16px;
+}
+
+.youtubeactive{
+	background-position: -148px -51px ;
+	width: 16px;
+	height: 16px;
+}
+
+.youtubehover{
+	background-position: -149px -2px ;
+	width: 16px;
+	height: 16px;
+}
+
